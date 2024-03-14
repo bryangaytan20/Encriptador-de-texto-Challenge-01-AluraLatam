@@ -1,0 +1,147 @@
+*{
+    background: #e4ebf0;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.header_box{
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo_aura{
+    padding-top: 5px;
+    width: 10%;
+ 
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor_textArea{
+    padding: 15px;
+    width: auto;
+}
+
+.texto_entrada,.texto_salida{
+    border: none;
+    padding:  20px 30px;
+    color: #4180ab;
+    background: #ffffff;
+    text-transform: lowercase;
+    border-radius: 24px;
+    resize: none;
+    /*position: fixed;*/
+
+}
+
+::placeholder{ color: #54a3ba;}
+    .texto_entrada,.texto_salida:focus{
+        outline: none;
+    }
+
+.mensaje_alerta{
+    color: #4180ab;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 5px;
+}
+
+.boton_encriptar{
+    background-color: #4180ab;
+    border: 1px solid #4180ab;
+    border-radius: 24px;
+    font-size: 25px;
+    color: #e4ebf0;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 45px;
+    width: 220px;
+    transition: 1s background;
+}
+
+.boton_encriptar:hover{
+    background: #122f51;
+}
+
+.boton_desencriptar{
+    background-color: white;
+    border: 1px solid #4180ab;
+    border-radius: 24px;
+    font-size: 25px;
+    color: #4180ab;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 55px;
+    width: 220px;
+    transition: 1s background;
+}
+
+.boton_desencriptar:hover{
+    background: #bdd1de;
+}
+
+.boton_copiar{
+    display: none;
+    background-color: #4180ab;
+    border: 1px solid #4180ab;
+    border-radius: 24px;
+    font-size: 25px;
+    color: #e4ebf0;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 190px;
+    width: 220px;
+    transition: 1s background;
+    margin-top: 18px;
+
+}
+
+.boton_copiar:hover{
+    background: #122f51;
+}
+
+
+footer{
+    width: auto;
+    text-align: center;
+    background: #8ab3cf;
+    padding: 70px;
+}
+
+.copyrigth{
+    background: #8ab3cf;
+    color: #FFFFFF;
+    font-size: 15px;
+    margin: 20px;
+}
+
+@media screen and (max-width:480px){
+    .logo_aura{
+        width: 30%;
+     
+    }
+
+    main{
+        background: #cccccc;
+    }
+
+    .header_box,.texto_entrada,.texto_salida,.botones,footer{
+        width: auto;
+    }
+
+
+}

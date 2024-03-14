@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header class="header_box">
+            <div class="box_img">
+                <h1><img class="logo_aura" src="imagenes/Logo.png" alt="Logos"></h1>
+            </div>
+        </header>
+        
+        <main>
+            <section class="contenedor_textArea">
+                <textarea class="texto_entrada" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <h6 class="mensaje_alerta">&#8252 Solo letras minusculas y sin acento</h6>
+                </div>
+                <div>
+                    <div class="botones">
+                        <button class="boton_encriptar" onclick="botonEncriptar()">Encriptar</button>
+                        <button class="boton_desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="contenedor_textArea">
+                <textarea id="textArea" class="texto_salida" cols="30" rows="10"></textarea>
+                <div>
+                    <button id="btn" class="boton_copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="copyrigth">&copy Creador - Bryan Gaytán.</p>
+        </footer>
+    
+    <script src="script.js"></script>
+    </body>
+
+</html>
